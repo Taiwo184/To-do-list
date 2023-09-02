@@ -1,0 +1,90 @@
+*{
+    /* margin: 0; */
+    padding:0 ;
+    font-family: 'Poppins';;
+}
+body{
+    width: 100%;
+    /* min-height: 100vh; */
+    background: linear-gradient(135deg, #153677, #770e85);
+}
+.container{
+    width: 100%;
+    max-width: 450px;
+    background: #ffff;
+    margin: 200px auto 20px;
+    padding: 10px 30px 100px;
+    border-radius: 10px;
+}
+.container h2{
+    color: #153677;
+    font-weight: 500;
+    align-self: center;
+    display: flex;
+}
+.input-part{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    width: 100%;
+    background: #edeef0;
+    margin-bottom: 30px;
+}
+.input-part .maininput{
+    margin: 0;
+    padding: 15px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    flex: 1;
+    background: transparent;
+}
+.input-part .maininput:is(:focus, :valid){
+    border: 2px solid #43AFFC;
+    border-radius: 15px;
+}
+.input-part .maininput::placeholder{
+    font-size: 18px;
+    color: #43AFFC;
+}
+.input-part .submit{
+    border: none;
+    background: #ff5945;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    /* transition: 2s ease-out; */
+}
+.list-container li{
+    list-style: none;
+    padding: 15px 10px 10px 40px;
+    user-select: none;
+    cursor: pointer;
+}
+.list-container li::before{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    height: 25px;
+    width: 30px;
+}
+ul li.checked{
+    text-decoration: line-through;
+    color: darkgrey;
+}
+ul li span{
+    position: absolute;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    right: 80px;
+    margin-bottom: 40px;
+    /* align-content: space-between; */
+}
+ul li span:hover{
+    background: rgb(240, 99, 99);
+    border-radius: 50%;
+}
